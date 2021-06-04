@@ -84,3 +84,6 @@ A continuación presentamos un layout (diseño) de la vista mobile y desktop de 
     
 ## 5. 📈Test de usabilidad
 Gracias al Feedback recibido por parte de nuestros usuarios, compañeras y coaches, pudimos iterar varias veces antes de llegar a nuestra versión final. Tomándose en cuenta principalmente:
+ 1- Ofrecer opciones de registro como Google y Facebook.
+ 2- Mostrar iconos cliqueables, grandes y de colores de contraste para facilitar su ubicacion.
+
