@@ -1,0 +1,559 @@
+/*----------------view profile----------------------*/
+
+.profile-container {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #eeeeee;
+}
+
+.profile-content {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.356);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+@media (max-width: 880px) {
+    .profile-content {
+        width: 100%
+    }
+}
+
+.profile-content i {
+    font-size: 20px;
+    color: #222;
+}
+
+.profile-information {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.cover-page {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    z-index: 0;
+}
+
+.edit-cover {
+    position: absolute;
+    right: 4%;
+    bottom: 70%;
+    z-index: 2;
+    outline: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.profile-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #222222;
+}
+
+.edit-photo-btn {
+    height: 33px;
+    width: 33px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.3rem;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 1.40rem;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.356);
+}
+
+.cover-photo {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 170px;
+    top: 28%;
+    z-index: 1;
+    position: absolute;
+    background-color: transparent;
+    justify-content: center;
+}
+
+.photo {
+    width: 170px;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 50%;
+    border: 0.3rem solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.356);
+    object-fit: cover;
+}
+
+.edit-photo {
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    left: 53%;
+    background-color: transparent;
+    text-align: center;
+}
+
+.user-information {
+    width: 100%;
+    z-index: 0;
+    padding: 4.5rem 3rem 3rem 3rem;
+    background-color: white;
+    color: #222;
+    position: relative;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.edit-info {
+    margin-top: 10rem;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+}
+
+.user-information h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 70px;
+}
+
+.user-information p {
+    text-align: left;
+}
+
+.container-user-post {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.container-user-post p {
+    margin: 0.5rem 0.5rem;
+}
+
+
+/* ---------------------view modal settings -------------------------*/
+
+.modal-container,
+.modal-progress {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: hidden;
+    z-index: 20;
+    transition: 600ms ease all;
+    background: rgba(0, 0, 0, 0.5);
+    /* transform: scale(0); */
+}
+
+
+/* New version */
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 600ms ease all;
+    display: none;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 400px;
+    height: min-content;
+    z-index: 21;
+    display: flex;
+    border-radius: 20px;
+    background-color: #E6FFFF;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.modal-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-close-button {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    outline: none;
+    z-index: 21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.modal-settings {
+    width: 40%;
+    height: 90%;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.modalHeader {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    width: 80%;
+}
+
+.btn-modalClose {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #A2468E;
+    background-color: #ffffff;
+    border: solid 2px #A2468E;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    outline: none;
+}
+
+.modalTitle {
+    color: #A2468E;
+    text-align: center;
+}
+
+.modal-settings form {
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.modal-settings label {
+    display: block;
+}
+
+.grupo input,
+.grupo textarea,
+#birthdayEdit {
+    border: 1px solid #A2468E;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+}
+
+.grupo input {
+    width: 100%;
+    height: 40px;
+}
+
+.modal-settings textarea {
+    width: 100%;
+    height: 60px;
+    resize: none;
+}
+
+#birthdayEdit {
+    height: 40px;
+}
+
+.btn-update {
+    border: none;
+    background: #A2468E;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 40px;
+    border-radius: 55px;
+    outline: none;
+    margin: 10px 10px;
+}
+
+.grupo input:focus,
+#birthdayEdit:focus,
+textarea:focus {
+    box-shadow: 2px 7px 10px -5px #8894a0;
+}
+
+.grupo input:hover,
+#birthdayEdit:hover,
+textarea:hover {
+    border: 1.6px solid #A2468E;
+}
+
+.btn-update:hover {
+    background: #A2468E;
+    width: 62%;
+    height: 44px;
+}
+
+.btn-modalClose:hover {
+    width: 34px;
+    height: 34px;
+    border-color: #A2468E;
+    color: #A2468E;
+}
+
+.showModal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+
+/*---------------modal edit profile----------------*/
+
+.container-grid {
+    height: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 50% 50%; */
+    grid-gap: 1px;
+}
+
+.container-grid-item {
+    font-size: 16px;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.item6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container-grid i {
+    color: #6f7174;
+    width: 30px;
+}
+
+
+/*-------------------progress send photo-----------------*/
+
+.progress {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.modal-progress {
+    background: rgba(252, 252, 252, 0.5);
+}
+
+#uploader {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+}
+
+#uploader[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+#uploader[value]::-webkit-progress-value {
+    background-image: -webkit-linear-gradient(-45deg, transparent 33%, #0000001f 33%, #35343421 66%, transparent 66%), -webkit-linear-gradient(left, #A2468E, #d18ac2);
+    border-radius: 2px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+#messageProgress {
+    background: #A2468E;
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.356);
+}
+
+@media (max-width: 700px) {
+    .container-user-post {
+        width: 100%;
+    }
+}
+
+.formInterest {
+    margin-top: 35px;
+    display: flex;
+}
+
+.inputForm {
+    background-color: rgba(212, 220, 236, 0.7);
+    border-width: 0px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.inputForm::placeholder {
+    color: #33333333;
+    font-weight: bold;
+}
+
+.buttonAddForm {
+    width: 100px;
+    height: 37px;
+    color: white;
+    background: #FC5484;
+    box-shadow: 0px 4px 4px rgba(185, 131, 131, 0.25);
+    border-radius: 10px;
+    border-width: 0px;
+    font-size: 16px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interest-list {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    background: rgba(212, 220, 236, 0.7);
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    min-height: auto;
+    padding-right: 40px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+li span {
+    display: block;
+    margin: -5px;
+}
+
+
+/* li span:nth-child(2) {
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+} */
+
+li div {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255, 255, 255, 0.6);
+    width: 40px;
+    text-align: center;
+    padding: 4px 0;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+    #interest-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-user-post {
+        width: 100%;
+    }
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.user-information h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* @media (max-width: 900px) {
+    .container-user-post {
+        width: 100%;
+    }
+    #interest-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-user-post {
+        width: 100%;
+    }
+    .edit-photo {
+        bottom: none;
+    }
+    .profile-photo {
+        top: 23%;
+    }
+    .edit-cover {
+        bottom: 65%;
+    }
+    .user-information h2 {
+        margin-top: 40px;
+    }
+    .edit-info {
+        margin-top: 9rem;
+    }
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+} */
