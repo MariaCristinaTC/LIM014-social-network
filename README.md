@@ -1,6 +1,4 @@
-![mobile](https://user-images.githubusercontent.com/77206991/131004842-caa63a46-208a-4c40-ba52-3981cb48711d.png)
-![mockup](https://user-images.githubusercontent.com/77206991/131004850-c690272b-3f48-4a8e-b39e-b2c53d4e9254.png)
-![desktop izy](https://user-images.githubusercontent.com/77206991/131004855-faf78f02-cbbe-4cd3-9d34-bd9900d4cc2a.png)
+
 
 # Creando una Red Social: "Izychoice"
 
@@ -12,6 +10,10 @@
 # izychoice 
 ### Made by [Sonia Sayago](https://github.com/SoniaSayago), [Julissa H.](https://github.com/Julissah) & [Maria Cris T.](https://github.com/MariaCristinaTC)
 >Social Network project
+
+
+![mockup](https://user-images.githubusercontent.com/77206991/131004850-c690272b-3f48-4a8e-b39e-b2c53d4e9254.png)
+
 
 ## Índice
 
@@ -78,12 +80,13 @@ A continuación presentamos un layout (diseño) de la vista mobile y desktop de 
 
 * Vista mobile
 
-    ![mobile]("https://github.com/SoniaSayago/LIM014-social-network/blob/Sonia/src/img/readme/mobile.png">
+![mobile](https://user-images.githubusercontent.com/77206991/131004842-caa63a46-208a-4c40-ba52-3981cb48711d.png)
   </p>)
 
 * Vista Desktop
 
-    ![desktop]("https://github.com/SoniaSayago/LIM014-social-network/blob/Sonia/src/img/readme/desktop.png")
+![desktop izy](https://user-images.githubusercontent.com/77206991/131004855-faf78f02-cbbe-4cd3-9d34-bd9900d4cc2a.png)
+
     
 ## 5. 📈Test de usabilidad
 Gracias al Feedback recibido por parte de nuestros usuarios, compañeras y coaches, pudimos iterar varias veces antes de llegar a nuestra versión final. Tomándose en cuenta principalmente:
