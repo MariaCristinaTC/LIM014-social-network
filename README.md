@@ -1,3 +1,6 @@
+![mobile](https://user-images.githubusercontent.com/77206991/131004842-caa63a46-208a-4c40-ba52-3981cb48711d.png)
+![mockup](https://user-images.githubusercontent.com/77206991/131004850-c690272b-3f48-4a8e-b39e-b2c53d4e9254.png)
+![desktop izy](https://user-images.githubusercontent.com/77206991/131004855-faf78f02-cbbe-4cd3-9d34-bd9900d4cc2a.png)
 
 # Creando una Red Social: "Izychoice"
 
