@@ -69,7 +69,7 @@ A continuación presentamos un layout (diseño) de la vista mobile y desktop de 
 * Vista mobile
 
 ![mobile](https://user-images.githubusercontent.com/77206991/131004842-caa63a46-208a-4c40-ba52-3981cb48711d.png)
-  </p>)
+  
 
 * Vista Desktop
 
