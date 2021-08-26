@@ -2,11 +2,6 @@
 
 # Creando una Red Social: "Izychoice"
 
-
-  <a title="izychoice" target="_blank" href= "./src/">
-    <img  src="https://github.com/SoniaSayago/LIM014-social-network/blob/Sonia/src/img/readme/mockup.png" alt="IzyChoice">
-  </a>
-
 # izychoice 
 ### Made by [Sonia Sayago](https://github.com/SoniaSayago), [Julissa H.](https://github.com/Julissah) & [Maria Cris T.](https://github.com/MariaCristinaTC)
 >Social Network project
